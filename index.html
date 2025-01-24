@@ -1,214 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tri-Tail</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff7e6;
-            color: #333;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #ff8c00;
-            padding: 10px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a.disabled {
-            pointer-events: none;
-            opacity: 0.6;
-        }
-
-        /* Logo and Slogan Section */
-        .logo-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .logo-section img {
-            max-width: 500px;
-            margin-right: 20px;
-        }
-
-        .slogan {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 40px;
-			font-style: italic;
-			font-family: Georgia, Serif;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>tri-Tail</title>
+		<style>
+			.wrapper {
+				max-width: 1000px;
+				margin: 0 auto;
+				background-color: #fff7e6;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Optional shadow effect */
+			}
+			
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background: linear-gradient(to left, black, #00000000 50%), 
+							linear-gradient(to right, black, #00000000 50%);
+				background-color: #fff7e6; 
+				color: #333;
+			}
+	
+			/* Navigation Bar */
+			nav {
+				background-color: #ff8c00;
+				padding: 10px;
+				display: flex;
+				justify-content: space-around;
+			}
+	
+			nav a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
+	
+			nav a.disabled {
+				pointer-events: none;
+				opacity: 0.6;
+			}
+	
+			/* Logo and Slogan Section */
+			.logo-section {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 20px;
+			}
+	
+			.logo-section img {
+				max-width: 500px;
+				margin-right: 20px;
+			}
+	
+			.slogan {
+				text-align: center;
+				margin-top: 10px;
+				font-size: 40px;
+				font-style: italic;
+				font-family: Georgia, Serif;
+			}
+			
+			.social-links-title {
+				margin-top: 10px;
+				font-size: 24px;
+				font-family: Georgia, Serif;
+			}
+	
+			.social-links {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+	
+			.social-links h2 {
+				font-size: 20px;
+				color: #333;
+				margin-bottom: 10px;
+			}
+	
+			.social-links a {
+				display: block;
+				width: 150px;
+				height: auto;
+			}
+	
+			.social-links img {
+				max-width: 100%;
+				border-radius: 5px;
+				transition: transform 0.2s;
+			}
+	
+			.social-links img:hover {
+				transform: scale(1.05);
+			}
+	
+			/* Panels */
+			.panel-container {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+			}
+	
+			.panel {
+				text-align: center;
+				padding: 10px;
+				transition: transform 0.2s;
+			}
+	
+			.panel:hover {
+				transform: scale(1.05);
+			}
+	
+			.panel img {
+				max-width: 100%;
+				height: auto;
+				display: block;
+			}
+	
+			/* News Section */
+			.news {
+				padding: 20px 100px 20px 100px;
+			}
+	
+			.news-post {
+				border-bottom: 1px solid #ccc;
+				padding: 10px 0;
+			}
+	
+			.news-title {
+				font-size: 20px;
+				color: #ff8c00;
+			}
+	
+			.news-meta {
+				font-size: 14px;
+				color: #666;
+			}
+	
+			.news-content {
+				margin: 10px 0;
+			}
+	
+			/* Footer */
+			footer {
+				background-color: #ff8c00;
+				color: white;
+				text-align: center;
+				padding: 10px 0;
+			}
+	
+			footer a {
+				color: white;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+		<!-- Navigation Bar -->
+			<nav>
+				<a href="#" class="disabled">Home</a>
+				<a href="tri-Tail-Team/tri-tail-team.html">Team</a>
+				<a href="tri-Tail-Imprint/tri-tail-imprint.html">Imprint & Privacy Statement</a>
+			</nav>
 		
-		.social-links-title {
-            margin-top: 10px;
-            font-size: 24px;
-			font-family: Georgia, Serif;
-        }
-
-        .social-links {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .social-links h2 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .social-links a {
-            display: block;
-            width: 150px;
-            height: auto;
-        }
-
-        .social-links img {
-            max-width: 100%;
-            border-radius: 5px;
-            transition: transform 0.2s;
-        }
-
-        .social-links img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Panels */
-        .panel-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-
-        .panel {
-            text-align: center;
-            padding: 10px;
-            transition: transform 0.2s;
-        }
-
-        .panel:hover {
-            transform: scale(1.05);
-        }
-
-        .panel img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* News Section */
-        .news {
-            padding: 20px;
-        }
-
-        .news-post {
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-
-        .news-title {
-            font-size: 20px;
-            color: #ff8c00;
-        }
-
-        .news-meta {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .news-content {
-            margin: 10px 0;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #ff8c00;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#" class="disabled">Home</a>
-        <a href="/tri-Tail-Team/tri-tail-team.html">Team</a>
-        <a href="/tri-Tail-Imprint/tri-tail-imprint.html">Imprint & Privacy Statement</a>
-    </nav>
-
-    <!-- Logo and Slogan Section -->
-    <section class="logo-section">
-        <div>
-			<img src="tri-Tail-Logo-M.png" alt="tri-Tail Logo">
-            <div class="slogan">Bring Color</div>
-            <div class="slogan">to the World!</div>
-        </div>
-        <div class="social-links">
-            <div class = "social-links-title">tri-Tail on...</div>
-            <a href="https://www.patreon.com/ceal" target="_blank">
-                <img src="Patreon-Button-Normal.png" alt="Patreon">
-            </a>
-            <a href="https://www.facebook.com/TheChroniclesOfCeal" target="_blank">
-                <img src="Facebook-Button-Normal.png" alt="Facebook">
-            </a>
-            <a href="https://www.youtube.com/channel/UC8L0RMAhXmeT4zXUWFF1Fjg" target="_blank">
-                <img src="YouTube-Button-Normal.png" alt="YouTube">
-            </a>
-        </div>
-    </section>
-
-    <!-- Panels Section -->
-    <div class="panel-container">
-        <div class="panel">
-            <a href="/Ceal/ceal.html">
-                <img src="Ceal-Banner.png" alt="Ceal Banner">
-            </a>
-        </div>
-        <div class="panel">
-            <a href="/Ecchnasi/ecchnasi.html">
-                <img src="Ecchnasi-Banner.png" alt="Ecchnasi Banner">
-            </a>
-        </div>
-    </div>
-
-    <!-- News Section -->
-    <section class="news">
-        <!-- Example News Post -->
-        <div class="news-post">
-            <h3 class="news-title">News Title 1</h3>
-            <div class="news-meta">January 24, 2025 | by Author Name</div>
-            <div class="news-content">
-                <p>Here is the content of the news post. You can add new posts by copying this block and updating the content.</p>
-            </div>
-        </div>
-        <!-- Add more news posts below -->
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Hungry for more? Let us know at <a href="mailto:info@tri-tail.com">info@tri-tail.com</a></p>
-        <p>Read the silly <a href="/tri-Tail-Imprint/tri-tail-imprint.html">Privacy Statement</a>.</p>
-    </footer>
-</body>
+			<!-- Logo and Slogan Section -->
+			<section class="logo-section">
+				<div>
+					<img src="tri-Tail-Logo-M.png" alt="tri-Tail Logo">
+					<div class="slogan">Bring Color</div>
+					<div class="slogan">to the World!</div>
+				</div>
+				<div class="social-links">
+					<div class = "social-links-title">tri-Tail on...</div>
+					<a href="https://www.patreon.com/ceal" target="_blank">
+						<img src="Patreon-Button-Normal.png" alt="Patreon">
+					</a>
+					<a href="https://www.facebook.com/TheChroniclesOfCeal" target="_blank">
+						<img src="Facebook-Button-Normal.png" alt="Facebook">
+					</a>
+					<a href="https://www.youtube.com/channel/UC8L0RMAhXmeT4zXUWFF1Fjg" target="_blank">
+						<img src="YouTube-Button-Normal.png" alt="YouTube">
+					</a>
+				</div>
+			</section>
+		
+			<!-- Panels Section -->
+			<div class="panel-container">
+				<div class="panel">
+					<a href="Ceal/ceal.html">
+						<img src="Ceal-Banner.png" alt="Ceal Banner">
+					</a>
+				</div>
+				<div class="panel">
+					<a href="Ecchnasi/ecchnasi.html">
+						<img src="Ecchnasi-Banner.png" alt="Ecchnasi Banner">
+					</a>
+				</div>
+			</div>
+		
+			<!-- News Section -->
+			<section class="news">
+				<div class="news-post">
+					<h3 class="news-title">The long-overdue website update!</h3>
+					<div class="news-meta">January 24, 2025 | by Kira Resari</div>
+					<div class="news-content">
+						<p>After procrastinating for almost a decade, I am now finally getting around to reworking the tri-Tail, Ceal and Ecchnasi websites. I am doing this one page at a time, so please excuse me if the website is going to look just a little bit inconsistent during that time.</p>
+						<p>One of the main points I want to address with this update is making the website easier to maintain, so I won't end up not updating it for so long. I did create the old website with little knowledge of html, and pretty much relied on an authoring software (I think it was Magix Web Designer) to translate what I designed on on a GUI into working html code, and let me tell you, that code was not pretty. That was one of the main reasons why I didn't update the website this long.</p>
+						<p>By contrast, this new website is written exclusively in html from the start, with the aid of my good friend Chatty (aka ChatGPT), whom I by now think of as something akin to a digital Puky.</p>
+						<p>As a result, the new website will look a lot more streamlined. I'll probably lose some of the more fancy design elements (like the interactive world map under Ceal/World) along the way, but I'll try to preserve as much as I can.</p>
+						<p>I'm also using this opportunity to clear the news history, since most of the entries there have long since been outdated anyway, so here's to a fresh start!</p>
+						<p>Also, one little announcement: Having brought the <a href="https://kiraresari.blogspot.com/">Travelling Fox Blog</a> to an official close last year, I am now re-dedicating myself to the Chronicles of Ceal once again. As such, the gears have already been put in motion, and you can expect great things for the Chronicles of Ceal in the not-so-distant future. Until then, stay tuned, and be of great cheer! =^,^=</p> 
+					</div>
+				</div>
+			</section>
+		
+			<!-- Footer -->
+			<footer>
+				<p>Hungry for more? Let us know at <a href="mailto:info@tri-tail.com">info@tri-tail.com</a></p>
+				<p>Read the silly <a href="tri-Tail-Imprint/tri-tail-imprint.html">Privacy Statement</a>.</p>
+			</footer>
+		</div>
+	</body>
 </html>
