@@ -3,11 +3,5 @@
 }
 
 .expander-wrapper {
-	flex: 1; /* This allows the main content to expand and take up available space */
-}
-
-.vertical-expander {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh; /* Full viewport height */
+	min-height: 100vh; 
 }
