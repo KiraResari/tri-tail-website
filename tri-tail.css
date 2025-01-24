@@ -1,0 +1,184 @@
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #fff7e6;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to left, black, #00000000 50%), 
+				linear-gradient(to right, black, #00000000 50%);
+	background-color: #fff7e6; 
+	color: #333;
+}
+
+/* Navigation Bar */
+nav {
+	background: url('triTailWaveHeader.png') no-repeat center;
+	background-size: 100% 100%; 
+	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+.nav-panel {
+	padding: 20px;
+	background-color: #cb8121af;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+.nav-panel:hover {
+	transform: scale(1.05);
+}
+
+.nav-panel-disabled {
+	text-decoration: none;
+	font-size: 18px;
+	padding: 20px;
+	background-color: #afafafaf;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	margin-top: 10px;
+	border-radius: 20px;
+}
+
+/* Divider */
+.divider {
+	text-align: center;
+}
+
+.divider img {
+	max-width: 95%;
+	height: auto;
+}
+
+/* Logo and Slogan Section */
+.logo-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.logo-section img {
+	max-width: 500px;
+	margin-right: 20px;
+}
+
+.slogan {
+	text-align: center;
+	margin-top: 10px;
+	font-size: 40px;
+	font-style: italic;
+	font-family: Georgia, Serif;
+}
+
+.social-links-title {
+	margin-top: 10px;
+	font-size: 24px;
+	font-family: Georgia, Serif;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.social-links h2 {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.social-links a {
+	display: block;
+	width: 150px;
+	height: auto;
+}
+
+.social-links img {
+	max-width: 100%;
+	border-radius: 5px;
+	transition: transform 0.2s;
+}
+
+.social-links img:hover {
+	transform: scale(1.05);
+}
+
+/* Panels */
+.panel-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+.panel {
+	text-align: center;
+	padding: 10px;
+	transition: transform 0.2s;
+}
+
+.panel:hover {
+	transform: scale(1.05);
+}
+
+.panel img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* News Section */
+.news {
+	padding: 20px 100px 20px 100px;
+}
+
+.news-post {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+
+.news-title {
+	font-size: 20px;
+	color: #cb8121;
+}
+
+.news-meta {
+	font-size: 14px;
+	color: #666;
+}
+
+.news-content {
+	margin: 10px 0;
+}
+
+/* Footer */
+footer {
+	background: url('triTailWaveFooter.png') no-repeat center;
+	background-size: 100% 100%; 
+	color: black;
+	text-align: center;
+	padding: 10px 0;
+	text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
+
+footer a {
+	color: black;
+	text-decoration: underline;
+	text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
+}
