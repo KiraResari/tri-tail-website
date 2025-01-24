@@ -2,13 +2,12 @@
   padding: 40px;
 }
 
-.site-wrapper {
+.expander-wrapper {
+	flex: 1; /* This allows the main content to expand and take up available space */
+}
+
+.vertical-expander {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh; /* Full viewport height */
-}
-
-/* Allow the main content to grow and push the footer to the bottom */
-.wrapper {
-	flex: 1; /* This allows the main content to expand and take up available space */
 }
