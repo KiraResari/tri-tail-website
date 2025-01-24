@@ -33,14 +33,33 @@
 			}
 	
 			nav a {
-				color: white;
+				color: black;
 				text-decoration: none;
 				font-size: 18px;
+				font-weight: bold;
+				text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 			}
-	
-			nav a.disabled {
-				pointer-events: none;
-				opacity: 0.6;
+			
+			.nav-panel {
+				padding: 20px;
+				background-color: #cb8121af;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+				margin-top: 10px;
+				border-radius: 20px;
+			}
+			
+			.nav-panel:hover {
+				transform: scale(1.05);
+			}
+			
+			.nav-panel-disabled {
+				text-decoration: none;
+				font-size: 18px;
+				padding: 20px;
+				background-color: #afafafaf;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+				margin-top: 10px;
+				border-radius: 20px;
 			}
 			
 			/* Divider */
@@ -160,14 +179,16 @@
 			footer {
 				background: url('triTailWaveFooter.png') no-repeat center;
 				background-size: 100% 100%; 
-				color: white;
+				color: black;
 				text-align: center;
 				padding: 10px 0;
+				text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 			}
 	
 			footer a {
-				color: white;
+				color: black;
 				text-decoration: underline;
+				text-shadow: 0px 0px 4px rgba(255, 255, 255, 1);
 			}
 		</style>
 	</head>
@@ -175,9 +196,13 @@
 		<div class="wrapper">
 		<!-- Navigation Bar -->
 			<nav>
-				<a href="#" class="disabled">Home</a>
-				<a href="tri-Tail-Team/tri-tail-team.html">Team</a>
-				<a href="tri-Tail-Imprint/tri-tail-imprint.html">Imprint & Privacy Statement</a>
+				<div class = "nav-panel-disabled">Home</div>
+				<a href="tri-Tail-Team/tri-tail-team.html">
+					<div class = "nav-panel">Team</div>
+				</a>
+				<a href="tri-Tail-Imprint/tri-tail-imprint.html">
+					<div class = "nav-panel">Imprint & Privacy Statement</div>
+				</a>
 			</nav>
 		
 			<!-- Logo and Slogan Section -->
