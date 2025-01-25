@@ -194,3 +194,12 @@ footer a {
 .glowing-clickable-image:hover {
 	transform: scale(1.05);
 }
+
+.row {
+	display: flex;
+	justify-content: center;
+}
+
+.padded {
+	padding: 10px;
+}
