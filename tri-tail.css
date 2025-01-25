@@ -200,6 +200,18 @@ footer a {
 	justify-content: center;
 }
 
+.spaced-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+	align-items: center;
+}
+
 .padded {
 	padding: 10px;
+}
+
+.meta {
+	font-size: 14px;
+	color: #7f7f7f;
 }
