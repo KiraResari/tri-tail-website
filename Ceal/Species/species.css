@@ -1,0 +1,75 @@
+/* Species Navigation */
+.species-nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.species-panels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.species-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.species-panel img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.species-panel div {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.species-panel:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Species Sections */
+.species-sections {
+    margin-top: 40px;
+}
+
+.species-section {
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.species-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.species-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.species-content img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.species-content p {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
