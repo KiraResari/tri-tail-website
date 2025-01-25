@@ -23,3 +23,7 @@ footer {
 	background: url('CealWaveFooter.png') no-repeat center;
 	background-size: 100% 100%; 
 }
+
+.expander-wrapper {
+	min-height: 100vh; 
+}
