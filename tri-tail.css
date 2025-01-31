@@ -211,6 +211,12 @@ footer a {
 	padding: 10px;
 }
 
+.padded img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .meta {
 	font-size: 14px;
 	color: #7f7f7f;
