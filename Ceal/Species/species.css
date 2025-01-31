@@ -9,6 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    padding: 10px;
 }
 
 .species-panel {
@@ -17,16 +18,24 @@
     align-items: center;
     text-decoration: none;
     color: inherit;
-    background: #f0f0f0;
     border-radius: 10px;
     padding: 10px;
-    width: 120px;
+    width: 150px;
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.species-panel.dragons { background-color: #00ff3f3f; }
+.species-panel.gryphs { background-color: #7f3f003f; }
+.species-panel.draykin { background-color: #ff00003f; }
+.species-panel.wel { background-color: #007fff3f; }
+.species-panel.nefilim { background-color: #ff7f003f; }
+.species-panel.seraph { background-color: #ff00ff3f; }
+.species-panel.celinne { background-color: #7f003f3f; }
+.species-panel.sprites { background-color: #ffff003f; }
+
 .species-panel img {
-    width: 100px;
+    width: 130px;
     height: auto;
     border-radius: 5px;
 }
@@ -42,13 +51,8 @@
 }
 
 /* Species Sections */
-.species-sections {
-    margin-top: 40px;
-}
-
 .species-section {
     padding: 20px;
-    border-bottom: 2px solid #ccc;
 }
 
 .species-section h2 {
@@ -70,6 +74,4 @@
 
 .species-content p {
     flex: 1;
-    font-size: 1.1em;
-    line-height: 1.6;
 }
