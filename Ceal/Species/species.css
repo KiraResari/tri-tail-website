@@ -75,3 +75,8 @@
 .species-content p {
     flex: 1;
 }
+
+h3 {
+	font-style: italic;
+	color: #7f7f7f;
+}
