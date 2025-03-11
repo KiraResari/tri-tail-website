@@ -1,0 +1,29 @@
+.wrapper {
+	background-color: #efffef;
+}
+
+body {
+	background-color: #efffef; 
+}
+
+nav {
+	background: url('EcchnasiWaveHeader.png') no-repeat center;
+	background-size: 100% 100%; 
+}
+
+.nav-panel {
+	background-color: #21cb21af;
+}
+
+.padded {
+	padding: 20px 100px 20px 100px;
+}
+
+footer {
+	background: url('EcchnasiWaveFooter.png') no-repeat center;
+	background-size: 100% 100%; 
+}
+
+.expander-wrapper {
+	min-height: 100vh; 
+}
