@@ -207,6 +207,16 @@ footer a {
 	align-items: center;
 }
 
+.row-section-60 {
+	padding: 10px;
+	width: 60%;
+}
+
+.row-section-40 {
+	padding: 10px;
+	width: 40%;
+}
+
 .padded {
 	padding: 10px;
 }
