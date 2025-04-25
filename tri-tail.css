@@ -1,5 +1,6 @@
 .wrapper {
 	max-width: 1000px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #fff7e6;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -230,4 +231,10 @@ footer a {
 .meta {
 	font-size: 14px;
 	color: #7f7f7f;
+}
+
+@media screen and (max-width: 768px) {
+	.wrapper {
+		box-shadow: none;
+	}
 }
