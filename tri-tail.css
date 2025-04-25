@@ -237,4 +237,49 @@ footer a {
 	.wrapper {
 		box-shadow: none;
 	}
+
+	.padded,
+	.news {
+	  	padding: 15px 20px;
+	}
+  
+	.logo-section {
+	  	flex-direction: column;
+	  	text-align: center;
+	}
+  
+	.logo-section img {
+	  	margin: 0 auto 20px;
+	  	max-width: 90%;
+	}
+  
+	.social-links {
+	  	align-items: center;
+	}
+  
+	nav {
+	  	flex-direction: column;
+	  	align-items: center;
+	}
+  
+	nav a {
+	  	margin: 5px 0;
+	}
+  
+	.nav-panel,
+	.nav-panel-disabled {
+	  	padding: 10px 15px;
+	  	font-size: 16px;
+	}
+
+	.panel-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+	.row {
+        flex-direction: column;
+        align-items: center;
+    }
 }
